@@ -1,4 +1,4 @@
-FROM php:8.0.30-apache
+FROM php:7.4.33-apache
 RUN a2enmod rewrite
 RUN docker-php-ext-install mysqli pdo pdo_mysql && docker-php-ext-enable pdo_mysql
 RUN apt-get update && apt-get install -y \
